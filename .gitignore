@@ -12,3 +12,5 @@ jre-amd64/
 graal/
 *.log
 src/main/resources/META-INF/services/
+addons/jvm/
+jvm/
