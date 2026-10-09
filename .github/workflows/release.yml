@@ -53,7 +53,7 @@ jobs:
           cd package
           zip -qr "../$name.zip" "$name"
           cd ..
-          unzip -l "$name.zip" | grep -E "addons/jvm/jvm.gdextension|jvm/godot-bootstrap.jar|jvm/main.jar"
+          unzip -l "$name.zip" | grep -E "addons/jvm/jvm.gdextension|jvm/debug/godot-bootstrap.jar|jvm/debug/usercode.jar"
 
       - name: Create the GitHub release
         run: |

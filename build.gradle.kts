@@ -2,7 +2,7 @@ import godot.annotation.processor.classgraph.AnnotationProcessingMode
 import godot.gradle.GodotLanguage
 
 plugins {
-    id("com.utopia-rise.godot-jvm") version "1.0.0-rc1"
+    id("com.utopia-rise.godot-jvm") version "1.0.0-rc2"
 }
 
 repositories {
@@ -35,11 +35,11 @@ godot {
     // --------- Android ---------
 
     // Path to the Android d8 executable used to build dex artifacts.
-    // Defaults to the d8 of the highest build-tools found under $ANDROID_SDK_ROOT.
-    // android.d8ToolPath.set("${System.getenv("ANDROID_SDK_ROOT")}/build-tools/36.0.0/d8")
+    // Defaults to the d8 of the highest build-tools found under $ANDROID_HOME.
+    // android.d8ToolPath.set("${System.getenv("ANDROID_HOME")}/build-tools/36.0.0/d8")
 
     // Path to the Android SDK platform directory used for compilation.
-    // android.compileSdkDirectory.set("${System.getenv("ANDROID_SDK_ROOT")}/platforms/android-36")
+    // android.compileSdkDirectory.set("${System.getenv("ANDROID_HOME")}/platforms/android-36")
 
     // Minimum Android API level passed to d8 during Android export.
     // android.minApiLevel.set(21)
